@@ -2,54 +2,126 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Services</title>
-  <link rel="stylesheet" href="services.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Services</title>
+    <link rel="stylesheet" href="services.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
- <!-- ================= HEADER ================= -->
-  <header class="header">
-    <div class="headerwhitebg">
-      <div class="container nav">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="">
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+        <div class="headerwhitebg">
+            <div class="container nav">
+                <div class="logo">
+                    <img src="./images/logo.svg" alt="">
+                </div>
+
+                <!-- MENU TOGGLE -->
+                <div class="menu-toggle" id="menuToggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <nav>
+                    <ul class="menu" id="menu">
+
+                        <li><a href="/">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="Projects.html">Projects</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
+    </header>
 
-        <!-- MENU TOGGLE -->
-        <div class="menu-toggle" id="menuToggle">
-          <i class="fa-solid fa-bars"></i>
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+            <h1>Services</h1>
+            <p>
+                <a href="index.html" class="breadcrumb-link">Home</a>
+                <span>›</span>
+                Services
+            </p>
         </div>
+    </section>
+<!-- ===== PRODUCTS SECTION ===== -->
+<section class="products-section">
+  <div class="products-wrapper">
 
-        <nav>
-          <ul class="menu" id="menu">
+    <!-- CARD 1 -->
+    <div class="product-card">
+      <div class="product-img">
+        <img src="https://demo2.themelexus.com/agrile/wp-content/uploads/2024/11/service-10.jpg" alt="">
+      </div>
 
-            <li><a href="/">Home</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="Projects.html">Projects</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
+      <div class="product-content">
+        <span class="product-icon">
+          <i class="fa-solid fa-wheat-awn"></i>
+        </span>
+
+        <h3>Agriculture Products</h3>
+        <p>
+          Why Choose Our Services Lorem ipsum is simply free text used by copytyping...
+        </p>
+
+        <a href="#" class="product-btn">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
     </div>
-  </header>
 
-  <!-- ===== HERO SECTION ===== -->
-<section class="hero">
-  <div class="hero-overlay"></div>
+    <!-- CARD 2 -->
+    <div class="product-card">
+      <div class="product-img">
+        <img src="https://demo2.themelexus.com/agrile/wp-content/uploads/2024/11/service-9.jpg" alt="">
+      </div>
 
-  <div class="hero-content">
-    <h1>Services</h1>
-    <p>
-      <a href="index.html" class="breadcrumb-link">Home</a>
-      <span>›</span>
-      Services
-    </p>
+      <div class="product-content">
+        <span class="product-icon">
+          <i class="fa-solid fa-carrot"></i>
+        </span>
+
+        <h3>Organic Vegetables</h3>
+        <p>
+          Why Choose Our Services Lorem ipsum is simply free text used by copytyping...
+        </p>
+
+        <a href="#" class="product-btn">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="product-card">
+      <div class="product-img">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee" alt="">
+      </div>
+
+      <div class="product-content">
+        <span class="product-icon">
+          <i class="fa-solid fa-cheese"></i>
+        </span>
+
+        <h3>Dairy Products</h3>
+        <p>
+          Why Choose Our Services Lorem ipsum is simply free text used by copytyping...
+        </p>
+
+        <a href="#" class="product-btn">
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -57,22 +129,21 @@
 
 
 
-    
-  <script>
-    const menuToggle = document.getElementById("menuToggle");
-    const menu = document.getElementById("menu");
-    const icon = menuToggle.querySelector("i");
+    <script>
+        const menuToggle = document.getElementById("menuToggle");
+        const menu = document.getElementById("menu");
+        const icon = menuToggle.querySelector("i");
 
-    menuToggle.addEventListener("click", () => {
-      menu.classList.toggle("active");
+        menuToggle.addEventListener("click", () => {
+            menu.classList.toggle("active");
 
-      if (menu.classList.contains("active")) {
-        icon.classList.replace("fa-bars", "fa-xmark");
-      } else {
-        icon.classList.replace("fa-xmark", "fa-bars");
-      }
-    });
-  </script>
+            if (menu.classList.contains("active")) {
+                icon.classList.replace("fa-bars", "fa-xmark");
+            } else {
+                icon.classList.replace("fa-xmark", "fa-bars");
+            }
+        });
+    </script>
 </body>
 
 </html>
